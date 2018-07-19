@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简历</title>
+		<link rel="stylesheet" href="style.css" />
+		<style type="text/css">
+			a{text-decoration: none;}
+		</style>
+	</head>
+	<body>
+		<nav class="head">
+			<ul id="head_ul">
+				<a href="#" id="cover"></a>
+				<li style="background: #ADFF2F;">导航栏</li>
+				<li>导航栏</li>
+				<li>导航栏</li>
+				<li>导航栏</li>
+				<li>导航栏</li>
+			</ul>
+		</nav>
+		<section class="main main1">
+			<div class="main1_play" id="main1_play">
+				<ul>
+					<li style="background: lightsalmon;">图片轮播区1</li>
+					<li style="background: lightskyblue;">2</li>
+					<li style="background: lightcoral;">3</li>
+					<li style="background: lightgreen;">4</li>
+					<li style="background: deepskyblue;">5</li>
+					<li style="background: lightsalmon;">图片轮播区1</li>
+				</ul>
+				<ol id="main1_play_point">
+					<a href="javascript:;"><li class="green"></li></a>
+					<a href="javascript:;"><li></li></a>
+					<a href="javascript:;"><li></li></a>
+					<a href="javascript:;"><li></li></a>
+					<a href="javascript:;"><li></li></a>
+				</ol>
+				<a href="javascript:;" class="main1_play_left" id="main1_play_left">&lt;</a>
+				<a href="javascript:void(0);" class="main1_play_right" id="main1_play_right">&gt;</a>
+				</div>
+		</section>
+		<section class="main main2">
+			<div class="main2_scroll" id="main2_scroll">
+				<div class="scroll_content" id="scroll_content">滚动区</div>
+			</div>
+			<div class="scrollbar" id="scrollbar">
+				<div class="bar" id="bar"></div>
+			</div>
+		</section>
+		<section class="main main3" id="main3">
+			<div class="main3_drag" id="main3_drag">
+				拖动区
+			</div>
+			<div class="main2_right_scroll" id="main2_right_scroll">
+				<a href="javascript:void(0)"></a>
+				<div class="main2_scroll_cover" id="main2_scroll_cover"></div>
+			</div>
+			<div class="main2_clip" id="main2_clip">0</div>
+		</section>
+		<section class="main main4">
+			<div class="main4_content" id="main_content">
+				<a href="javascript:;" class="main4_content_left">&lt;</a>
+				<a href="javascript:;" class="main4_content_right">&gt;</a>
+				<ul>
+					<li style="background: darksalmon; z-index: 1;"></li>
+					<li style="background: darkgreen;"></li>
+					<li style="background: lightseagreen;"></li>
+					<li style="background: darkkhaki;"></li>
+					<li style="background: darkturquoise;"></li>
+					<li style="background: lightcoral;"></li>
+				</ul>
+			</div>
+			<div class="main4_small" id="main4_small">
+				<ul>
+					<li style="background: darksalmon;opacity: 1;"></li>
+					<li style="background: darkgreen;"></li>
+					<li style="background: lightseagreen;"></li>
+					<li style="background: darkkhaki;"></li>
+					<li style="background: darkturquoise;"></li>
+					<li style="background: lightcoral;"></li>
+				</ul>
+			</div>
+		</section>
+		<section class="main main5">
+			旋转木马 联系我
+			<div class="main5_rotate" id="main5_rotate">
+				<ul>
+					<li style="background: darksalmon;"></li>
+					<li style="background: darkgreen;"></li>
+					<li style="background: lightseagreen;"></li>
+					<li style="background: darkkhaki;"></li>
+					<li style="background: darkturquoise;"></li>
+					<li style="background: lightcoral;"></li>
+					<li style="background: lightgreen;"></li>
+				</ul>
+				<a href="javascript:;" class="rotate_left" id="rotate_left">&lt;</a>
+				<a href="javascript:void(0);" class="rotate_right" id="rotate_right">&gt;</a>
+			</div>
+		</section>
+		<section class="main main6">
+			marquee和小动画
+			<div class="animation1"><marquee loop="5" behavior="alternate" align="bottom">无缝滚动</marquee></div>
+			<div class="animation1"><marquee behavior="slide" direction="right">有空白的无缝滚动</marquee></div>
+			<marquee bgcolor="#00BFFF" >marquee滚动小动画</marquee>
+			<marquee bgcolor="#002ddd" scrollamount="10" scrolldelay="500">marquee滚动小动画</marquee>
+		</section>
+		<aside class="side_left" id="side_left"></aside>
+		<aside class="side_right" id="side_right"></aside>
+		<aside class="point" id="aside_point">
+			<ul>
+				<a href="javascript:;"><li style="background: deepskyblue;"></li></a>
+				<a href="javascript:;"><li></li></a>
+				<a href="javascript:;"><li></li></a>
+				<a href="javascript:;"><li></li></a>
+				<a href="javascript:;"><li></li></a>
+			</ul>
+		</aside>
+		<div title="返回顶部" class="returnTop" id="returnTop">返回顶部</div>
+	</body>
+	<script type="text/javascript" src="move.js"></script>
+	<script src="wheel&scroll.js"></script>
+</html>
