@@ -1,12 +1,6 @@
-####Ajax
-######axios
-######fetch
 ######async函数
 async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已。
 
-#######Promise
-
-Promise通过then方法进行链式调用，resolve和reject结果
 
 
 #######跨域处理
@@ -19,15 +13,6 @@ Promise通过then方法进行链式调用，resolve和reject结果
 * let:let声明的变量只在let命令所在的代码块内有效。声明的变量仅在块级作用域
 * const:声明一个只读的常量。一旦声明，常量的值就不能改变。只在声明所在的块级作用域内有效。
 * ES6为了改变这一点，一方面规定，为了保持兼容性，var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性。也就是说，从ES6开始，全局变量将逐步与顶层对象的属性脱钩。
-<pre>
-var a = 1;
-// 如果在Node的REPL环境，可以写成global.a
-// 或者采用通用方法，写成this.a
-window.a // 1
-let b = 1;
-window.b // undefined
-上面代码中，全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。
-</pre>
 * 全局环境中，this会返回顶层对象。但是，
 * 模块和ES6模块中，this返回的是当前模块。
 函数里面的this，如果函数不是作为对象的方法运行，而是单纯作为函数运行，this会指向顶层对象。但是，严格模式下，这时this会返回undefined。
@@ -42,7 +27,6 @@ ES6 规定，块级作用域之中，函数声明语句的行为类似于let，�
 （3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用Rest参数代替。
 
 （4）不可以使用yield命令，因此箭头函数不能用作Generator函数。
-</pre>
 ######6.ES6引入了一种新的原始数据类型Symbol，表示独一无二的值。它是JavaScript语言的第七种数据类型，前六种是：Undefined、Null、布尔值（Boolean）、字符串（String）、数值（Number）、对象（Object）。
 ####CommonJs module 规范和 ES6 module 规范
 
