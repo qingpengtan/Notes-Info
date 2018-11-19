@@ -1,5 +1,11 @@
 ######async函数
-async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已。
+https://blog.csdn.net/tcy83/article/details/80544048
+async 函数就是将 Generator 函数的星号（*）替换成 async，将 yield 替换成 await，仅此而已。返回的是一个promise函数
+说明await后面是支持非Promise函数的，但是执行的结果是不一样的，所以await针对所跟的表达式不同，有两种处理方式：
+
+1、对于Promise对象，await会阻塞主函数的执行，等待 Promise 对象 resolve，然后得到 resolve 的值，作为 await 表达式的运算结果，然后继续执行主函数接下来的代码。
+
+2、对于非Promise对象，await等待函数或者直接量的返回，而不是等待其执行结果。
 
 
 
