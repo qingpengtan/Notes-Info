@@ -56,9 +56,9 @@ class Region {
 
 		const provinceChange = () => {
 			let areas = regionData[provinceSelect -1].city.
-			filter(item) => {
+			filter((item) => {
 				return item.id == parseInt($citySelect.value);				
-			}[0].district;
+			})[0].district;
 
 			let areaOptions = "";
 			citySelect = parseInt($citySelect.value);
