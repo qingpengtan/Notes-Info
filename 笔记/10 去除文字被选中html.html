@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="joke">你选中我之后，弹出我！逗你玩</div>
+	<div id="not_chaoose">你不能选中我，不信你试试</div>
+	<script type="text/javascript">
+	function test(){
+	var txt = window.getSelection?window.getSelection():document.selection.createRange().text;
+	alert(txt)	
+    }
+    document.getElementById('joke').onmouseup = test;
+
+   function test1(){
+	window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();
+   }
+   // mpty() 方法从被选元素移除所有内容，包括所有文本和子节点。
+   document.getElementById('not_chaoose').onmouseup = test1;
+
+
+   // document.selection.createRange方法----获取用户选择文本
+// 该方法将创建一个 Range 对象，可以用来表示文档的一个区域或与该文档相关的 DocumentFragment 对象。
+// 注意，该方法实际上不是由 Document 接口定义的，而是由 DocumentRange 接口定义的。如果一个实现支持 Range 模块，那么 Document 对象就会实现 DocumentRange 接口，并定义该方法。IE 6 不支持这个模块
+	</script>
+</body>
+</html>
